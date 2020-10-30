@@ -20,8 +20,36 @@ class HomePageState extends State<HomePage> {
           CustomSwitchDarkTheme(),
         ],
       ),
-      body: Center(
-        child: CustomSwitchDarkTheme(),
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Contador: $counter'),
+            CustomSwitchDarkTheme(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  height: 50,
+                  width: 50,
+                  color: Colors.pink,
+                ),
+                Container(
+                  height: 50,
+                  width: 50,
+                  color: Colors.pink,
+                ),
+                Container(
+                  height: 50,
+                  width: 50,
+                  color: Colors.pink,
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
