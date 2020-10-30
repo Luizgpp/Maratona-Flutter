@@ -17,14 +17,22 @@ class HomePageState extends State<HomePage> {
         title: Text('Home Page'),
       ),
       body: Container(
-        height: 200,
-        width: 200,
+        height: 300,
+        width: double.infinity,
         color: Colors.black87,
         child: Center(
           child: Container(
-            height: 100,
-            width: 100,
+            height: 150,
+            width: 150,
             color: Colors.red,
+            child: GestureDetector(
+              child: Center(
+                child: Text(
+                  'Contador: $counter',
+                  style: TextStyle(fontSize: 20, color: Colors.black),
+                ),
+              ),
+            ),
           ),
         ),
       ),
