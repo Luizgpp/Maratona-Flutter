@@ -23,30 +23,33 @@ class HomePageState extends State<HomePage> {
       body: Container(
         height: double.infinity,
         width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: ListView(
+          scrollDirection: Axis.horizontal,
           children: [
             Text('Contador: $counter'),
             CustomSwitchDarkTheme(),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  height: 50,
+                  height: 100,
                   width: 50,
                   color: Colors.pink,
                 ),
                 Container(
-                  height: 50,
-                  width: 50,
+                  height: 100,
+                  width: 100,
                   color: Colors.pink,
                 ),
                 Container(
-                  height: 50,
+                  height: 100,
                   width: 50,
                   color: Colors.pink,
                 ),
               ],
+            ),
+            Container(
+              width: 150,
             ),
           ],
         ),
